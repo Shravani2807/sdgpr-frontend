@@ -19,7 +19,7 @@ function LoginPage() {
         e.preventDefault();
         try {
             // Send a POST request to your backend's login endpoint
-            const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+            const res = await axios.post('https://sdgpr-backend.onrender.com/api/auth/login', formData);
 
             // Assuming the backend sends back a token
             localStorage.setItem('token', res.data.token);
