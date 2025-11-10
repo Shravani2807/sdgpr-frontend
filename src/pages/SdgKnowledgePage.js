@@ -1,37 +1,23 @@
-import React, { useRef } from 'react'; // Import the useRef hook
-import { Link } from 'react-router-dom'; // Using Link for internal navigation
-import './SdgKnowledgePage.css'; // We will create this new CSS file
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../components/Header'; // Use the reusable Header
+import './SdgKnowledgePage.css';
 
 function SdgKnowledgePage() {
-    // Create refs for the sections you want to scroll to
     const overviewRef = useRef(null);
     const targetsRef = useRef(null);
 
-    // Create a function that smoothly scrolls to the element
     const handleScrollTo = (ref) => {
         if (ref.current) {
-            ref.current.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
+            ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
     return (
         <div className="knowledge-page-wrapper">
-            {/* The header and navigation can be a shared component, but for now we repeat it */}
-            <header className="header">
-                <div className="container header-content">
-                    <div className="logo">
-                        <span role="img" aria-label="globe" className="logo-icon">🌍</span>
-                        <span className="logo-text">SDG Knowledge Hub</span>
-                    </div>
-                    <div className="header-actions">
-                        <Link to="/login" className="header-link">Login</Link>
-                        <Link to="/register" className="header-link">Registration</Link>
-                    </div>
-                </div>
-            </header>
+            
+            <Header /> {/* Reusable Header component */}
+
             <nav className="navigation">
                 <div className="container">
                     <ul className="nav-links">
@@ -39,24 +25,18 @@ function SdgKnowledgePage() {
                         <li className="nav-item dropdown open">
                             <Link to="/sdg-knowledge" className="nav-link">SDG Knowledge ▼</Link>
                             <div className="dropdown-menu" style={{ display: 'block' }}>
-                                {/* Updated dropdown links to be divs with onClick handlers */}
-                                <div className="dropdown-item" onClick={() => handleScrollTo(overviewRef)}>
-                                    Overview
-                                </div>
-                                <div className="dropdown-item" onClick={() => handleScrollTo(targetsRef)}>
-                                    Goals & Targets
-                                </div>
+                                <div className="dropdown-item" onClick={() => handleScrollTo(overviewRef)}>Overview</div>
+                                <div className="dropdown-item" onClick={() => handleScrollTo(targetsRef)}>Goals & Targets</div>
                             </div>
                         </li>
-                        <li className="nav-item"><Link to="#" className="nav-link">SDG 10</Link></li>
-                        <li className="nav-item"><Link to="#" className="nav-link">SDG 11</Link></li>
-                        <li className="nav-item"><Link to="#" className="nav-link">About us</Link></li>
+                        <li className="nav-item"><Link to="/sdg10" className="nav-link">SDG 10</Link></li>
+                        <li className="nav-item"><Link to="/sdg11" className="nav-link">SDG 11</Link></li>
+                        <li className="nav-item"><Link to="/about" className="nav-link">About us</Link></li>
                     </ul>
                 </div>
             </nav>
 
             <main className="main-content-knowledge">
-                {/* Attach the ref to the section element */}
                 <section ref={overviewRef} id="overview" className="knowledge-section">
                     <div className="container">
                         <h1 className="knowledge-title">SDG Knowledge Overview</h1>
@@ -76,7 +56,6 @@ function SdgKnowledgePage() {
                     </div>
                 </section>
 
-                {/* Attach the ref to the section element */}
                 <section ref={targetsRef} id="targets" className="knowledge-section alt-background">
                     <div className="container">
                         <h2 className="section-title">Official Goals & Targets</h2>
@@ -104,7 +83,6 @@ function SdgKnowledgePage() {
                 </section>
             </main>
 
-            {/* Reusing the footer from the main page */}
             <footer className="footer">
                 <div className="container">
                     <p>© 2025 SDG Knowledge Hub</p>
