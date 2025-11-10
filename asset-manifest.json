@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sdgpr-frontend/static/css/main.2083b1fa.css",
-    "main.js": "/sdgpr-frontend/static/js/main.4b60efe0.js",
+    "main.css": "/sdgpr-frontend/static/css/main.b4544e04.css",
+    "main.js": "/sdgpr-frontend/static/js/main.8f01e15f.js",
     "static/js/453.d7446e4a.chunk.js": "/sdgpr-frontend/static/js/453.d7446e4a.chunk.js",
     "index.html": "/sdgpr-frontend/index.html",
-    "main.2083b1fa.css.map": "/sdgpr-frontend/static/css/main.2083b1fa.css.map",
-    "main.4b60efe0.js.map": "/sdgpr-frontend/static/js/main.4b60efe0.js.map",
+    "main.b4544e04.css.map": "/sdgpr-frontend/static/css/main.b4544e04.css.map",
+    "main.8f01e15f.js.map": "/sdgpr-frontend/static/js/main.8f01e15f.js.map",
     "453.d7446e4a.chunk.js.map": "/sdgpr-frontend/static/js/453.d7446e4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2083b1fa.css",
-    "static/js/main.4b60efe0.js"
+    "static/css/main.b4544e04.css",
+    "static/js/main.8f01e15f.js"
   ]
 }
