@@ -53,7 +53,7 @@ function SdgPage10() {
                     </div>
                     <div className="cta-card bg-sdg-10">
                         <h2 className="cta-title">How This Supports Our Platform</h2>
-                        <p className="cta-text">SDG 10 is the core of our mission...</p>
+                        <p className="cta-text">SDG 10 is the core of our mission. By providing a platform to share accessibility information, we empower individuals to overcome physical and social barriers. Every rating and review you contribute helps reduce inequality</p>
                     </div>
                 </div>
             </main>

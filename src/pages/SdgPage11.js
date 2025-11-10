@@ -53,7 +53,7 @@ function SdgPage11() {
                     </div>
                     <div className="cta-card bg-sdg-11">
                         <h2 className="cta-title">Shape Your Sustainable City</h2>
-                        <p className="cta-text">SDG 11's vision is built on shared knowledge...</p>
+                        <p className="cta-text">SDG 11's vision is built on shared knowledge. By sharing information about accessible locations, you actively help build a more inclusive urban environment. Your contributions are vital data for city planners and fellow citizens.</p>
                     </div>
                 </div>
             </main>

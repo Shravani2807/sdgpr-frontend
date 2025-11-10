@@ -12,6 +12,9 @@ const Payment = () => {
   const domains = [
     "Urban Equality Program",
     "Green Infrastructure Initiative",
+    "Inclusive Housing Project",
+    "Sustainable Transport Network"
+
   ];
 
   // MODIFIED: This function no longer calls the Razorpay API.
@@ -21,7 +24,7 @@ const Payment = () => {
       alert("Please fill all the fields.");
       return;
     }
-    
+
     // Simulate a successful payment.
     console.log("Simulating payment with data:", formData);
     alert(
@@ -89,63 +92,63 @@ const Payment = () => {
 
 // Styles remain the same
 const styles = {
-    container: {
-      maxWidth: "500px",
-      margin: "40px auto",
-      padding: "30px",
-      textAlign: "center",
-      color: "#333",
-      borderRadius: "12px",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-      fontFamily: "Arial, sans-serif",
-      backgroundColor: "#e1f5fe",
-    },
-    heading: {
-      color: "#005d7f",
-      marginBottom: "25px",
-    },
-    form: {
-      display: "flex",
-      flexDirection: "column",
-      gap: "15px",
-    },
-    input: {
-      padding: "12px",
-      borderRadius: "8px",
-      border: "1px solid #e1f5fe",
-      fontSize: "16px",
-    },
-    button: {
-      backgroundColor: "#0288d1",
-      color: "#fff",
-      padding: "12px",
-      borderRadius: "8px",
-      border: "none",
-      cursor: "pointer",
-      fontSize: "16px",
-      fontWeight: "bold",
-    },
-    orDivider: {
-      margin: "30px 0",
-      textAlign: "center",
-      borderBottom: "1px solid #e1f5fe",
-      lineHeight: "0.1em",
-    },
-    orText: {
-      background: "#e1f5fe",
-      padding: "0 10px",
-      color: "#aaa",
-    },
-    qrContainer: {
-      marginTop: "20px",
-    },
-    qrCode: {
-      width: "200px",
-      height: "200px",
-      marginTop: "10px",
-      border: "1px solid #eee",
-      borderRadius: "8px",
-    },
-  };
+  container: {
+    maxWidth: "500px",
+    margin: "40px auto",
+    padding: "30px",
+    textAlign: "center",
+    color: "#333",
+    borderRadius: "12px",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+    fontFamily: "Arial, sans-serif",
+    backgroundColor: "#e1f5fe",
+  },
+  heading: {
+    color: "#005d7f",
+    marginBottom: "25px",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+  },
+  input: {
+    padding: "12px",
+    borderRadius: "8px",
+    border: "1px solid #e1f5fe",
+    fontSize: "16px",
+  },
+  button: {
+    backgroundColor: "#0288d1",
+    color: "#fff",
+    padding: "12px",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "bold",
+  },
+  orDivider: {
+    margin: "30px 0",
+    textAlign: "center",
+    borderBottom: "1px solid #e1f5fe",
+    lineHeight: "0.1em",
+  },
+  orText: {
+    background: "#e1f5fe",
+    padding: "0 10px",
+    color: "#aaa",
+  },
+  qrContainer: {
+    marginTop: "20px",
+  },
+  qrCode: {
+    width: "200px",
+    height: "200px",
+    marginTop: "10px",
+    border: "1px solid #eee",
+    borderRadius: "8px",
+  },
+};
 
 export default Payment;

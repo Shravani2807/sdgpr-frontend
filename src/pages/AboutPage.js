@@ -6,7 +6,7 @@ import './AboutPage.css';
 const AboutPage = () => {
     return (
         <div className="about-page-wrapper">
-            
+
             <Header /> {/* Reusable Header component */}
 
             <nav className="navigation">
@@ -57,23 +57,25 @@ const AboutPage = () => {
                         <div className="initiatives-grid">
                             <div className="initiative-card">
                                 <h3 className="initiative-title">Urban Equality Program</h3>
-                                <p className="initiative-description">Help map and review the accessibility of public buildings...</p>
-                                <button className="initiative-btn"><Link to="/payment">Volunteer Now</Link></button>
+                                <p className="initiative-description">Help map and review the accessibility of public buildings, transportation, and services in your area. Your feedback directly populates our platform and advocates for urban improvements.</p>
+                                <button className="initiative-btn"><Link to="/payment">Get Involved</Link></button>
                             </div>
                             <div className="initiative-card">
                                 <h3 className="initiative-title">Green Infrastructure Initiative</h3>
-                                <p className="initiative-description">Contribute to creating accessible green spaces...</p>
+                                <p className="initiative-description">Contribute to creating accessible green spaces. Join community efforts to design and build inclusive parks, gardens, and recreational areas that everyone can enjoy.</p>
                                 <button className="initiative-btn"><Link to="/payment">Get Involved</Link></button>
                             </div>
                             <div className="initiative-card">
                                 <h3 className="initiative-title">Inclusive Housing Project</h3>
-                                <p className="initiative-description">Advocate for and contribute data on accessible housing...</p>
-                                <button className="initiative-btn">Share Your Ideas</button>
+                                <p className="initiative-description">Advocate for and contribute data on accessible housing. Work with local developers and policymakers to ensure new residential projects meet universal design standards.</p>
+                                <button className="initiative-btn"><Link to="/payment">Get Involved</Link></button>
+
                             </div>
                             <div className="initiative-card">
                                 <h3 className="initiative-title">Sustainable Transport Network</h3>
-                                <p className="initiative-description">Rate and review the accessibility of your local public transport system...</p>
-                                <button className="initiative-btn">Share Your Experience</button>
+                                <p className="initiative-description">Rate and review the accessibility of your local public transport system. Help us identify gaps and campaign for fully accessible buses, trains, and stations for seamless travel.</p>
+                                <button className="initiative-btn"><Link to="/payment">Get Involved</Link></button>
+
                             </div>
                         </div>
                     </div>
